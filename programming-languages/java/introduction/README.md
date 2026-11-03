@@ -51,9 +51,7 @@ Trinta anos depois, continua sendo uma das linguagens mais usadas em sistemas de
 4. **Adaptação ao cloud-native**: Quarkus, Micronaut, Spring Boot 3 + GraalVM e o Project Leyden atacam justamente os pontos fracos de startup e memória.
 5. **Previsibilidade para o negócio**: LTS com suporte longo, compatibilidade forte e um ecossistema estável tornam Java uma escolha de baixo risco para sistemas que vão viver 10+ anos.
 
-### Na visão de Staff
-A pergunta certa não é "Java é bom?", e sim **"Java é a escolha certa para este problema, este time e este horizonte de tempo?"**
-
+### Quando escolher Java
 **Java costuma ser uma boa escolha quando:**
 - o serviço é de longa duração, com alto throughput e requisitos de confiabilidade;
 - vários times vão manter o código por muitos anos;
@@ -122,9 +120,7 @@ Thirty years later, it remains one of the most widely used languages for backend
 4. **Adapting to cloud-native**: Quarkus, Micronaut, Spring Boot 3 + GraalVM, and Project Leyden target exactly the weak spots of startup time and memory usage.
 5. **Predictability for the business**: Long-term LTS support, strong compatibility, and a stable ecosystem make Java a low-risk choice for systems expected to live 10+ years.
 
-### The Staff perspective
-The right question is not "Is Java good?" but **"Is Java the right choice for this problem, this team, and this time horizon?"**
-
+### When to choose Java
 **Java is usually a good choice when:**
 - the service is long-running, with high throughput and reliability requirements;
 - multiple teams will maintain the code for many years;
