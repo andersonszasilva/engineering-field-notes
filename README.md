@@ -10,9 +10,9 @@ A journey through software engineering, system design, and technical leadership.
 
 | Area | Topics |
 |------|--------|
-| [Software Architecture](software-architecture/) | System Design · Design Patterns · Architecture Decision Records |
+| [Software Architecture](software-architecture/) | System Design · [Design Patterns (GoF)](software-architecture/design-patterns/) · Architecture Decision Records |
 | [Distributed Systems](distributed-systems/) | Kafka · Messaging · Consistency · Resilience |
-| [Programming Languages](programming-languages/) | Java (Introduction · Concurrency · Garbage Collection · Performance · Spring Boot) · Python (Concurrency · Memory Management · Performance · FastAPI) |
+| [Programming Languages](programming-languages/) | Java (Introduction · Concurrency · Garbage Collection · Performance · Spring Boot) · Kotlin (Introduction) · Go (Introduction) · C++ (Introduction) · Rust (Introduction) · Python (Introduction · Concurrency · Memory Management · Performance · FastAPI) |
 | [AWS & Cloud](aws-and-cloud/) | Compute · Networking · Databases · Observability |
 | [Staff Engineer](staff-engineer/) | Technical Leadership · Influence · Communication · Engineering Culture |
 | [Case Studies](case-studies/) | Rate Limiter · URL Shortener · Notification System · Feed System · Financial Reconciliation |
