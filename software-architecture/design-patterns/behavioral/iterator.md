@@ -70,7 +70,9 @@ Today the pattern is **part of the language** in almost all of them: `for-each`,
 
 Scenario: iterate over all orders from a paginated API (simulated), fetching pages lazily.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.Iterator;
 import java.util.List;
@@ -123,7 +125,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 data class Page(val items: List<String>, val nextPage: Int?)
 
@@ -150,7 +156,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -200,7 +210,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <algorithm>
 #include <iostream>
@@ -252,7 +266,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 struct Page {
     items: Vec<String>,
@@ -301,7 +319,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from collections.abc import Iterator
 from dataclasses import dataclass
@@ -333,6 +355,8 @@ if __name__ == "__main__":
         print(order)
     print(next(all_orders()))  # lazy: fetches only page 0
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

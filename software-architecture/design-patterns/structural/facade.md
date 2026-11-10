@@ -70,7 +70,9 @@ In architecture, it shows up as an *application service* / *use case*, an *API g
 
 Scenario: a `CheckoutFacade` orchestrates inventory, payment, shipping, and notification, with compensation if payment fails.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 class InventoryService {
     boolean reserve(String sku, int qty) { System.out.println("reserved " + qty + "x " + sku); return true; }
@@ -112,7 +114,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 class InventoryService {
     fun reserve(sku: String, qty: Int) = true.also { println("reserved ${qty}x $sku") }
@@ -150,7 +156,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -209,7 +219,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <stdexcept>
@@ -258,7 +272,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 struct Inventory;
 impl Inventory {
@@ -314,7 +332,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 class InventoryService:
     def reserve(self, sku: str, qty: int) -> bool:
@@ -363,6 +385,8 @@ class CheckoutFacade:
 if __name__ == "__main__":
     print(CheckoutFacade().place_order("ana", "SKU-1", 2, 5_990))
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

@@ -76,7 +76,9 @@ Bridge vs Adapter: Adapter is applied **after the fact** to make existing interf
 
 Scenario: alert types (abstraction) × delivery channels (implementation).
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 // Implementor
 interface Channel {
@@ -119,7 +121,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 fun interface Channel {
     fun deliver(text: String)
@@ -149,7 +155,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -198,7 +208,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <algorithm>
 #include <cctype>
@@ -251,7 +265,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 // Implementor
 trait Channel {
@@ -293,7 +311,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Protocol
@@ -336,6 +358,8 @@ if __name__ == "__main__":
     InfoAlert(EmailChannel()).raise_alert("deploy finished")
     CriticalAlert(SlackChannel()).raise_alert("db replica lag > 30s")
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

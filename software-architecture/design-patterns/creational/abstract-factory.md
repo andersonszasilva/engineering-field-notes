@@ -72,7 +72,9 @@ Difference from Factory Method: Factory Method creates **one** product; Abstract
 
 Scenario: a cloud factory creates a matching `BlobStorage` and `Queue` for AWS or GCP.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 interface BlobStorage { void put(String key, byte[] data); }
 interface Queue { void publish(String message); }
@@ -128,7 +130,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 interface BlobStorage { fun put(key: String, data: ByteArray) }
 interface Queue { fun publish(message: String) }
@@ -172,7 +178,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -229,7 +239,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <cstdlib>
 #include <iostream>
@@ -288,7 +302,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 trait BlobStorage { fn put(&self, key: &str, data: &[u8]); }
 trait Queue { fn publish(&self, msg: &str); }
@@ -337,7 +355,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 import os
 from typing import Protocol
@@ -401,6 +423,8 @@ if __name__ == "__main__":
     factory: CloudFactory = GcpFactory() if os.getenv("CLOUD") == "gcp" else AwsFactory()
     export_report(factory, "42")
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

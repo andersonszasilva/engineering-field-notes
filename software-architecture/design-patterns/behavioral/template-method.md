@@ -72,7 +72,9 @@ Hollywood principle: *"don't call us, we'll call you"*. The framework controls t
 
 Scenario: an ETL job skeleton (`extract → transform → hook → load`) with one concrete CSV job.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.List;
 
@@ -114,7 +116,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 abstract class EtlJob {
     // Kotlin methods are final by default; only `abstract`/`open` ones can be overridden.
@@ -152,7 +158,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -207,7 +217,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <algorithm>
 #include <cctype>
@@ -259,7 +273,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 // Trait default methods act as the template; required methods are the abstract steps.
 trait EtlJob {
@@ -303,7 +321,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 import time
 from abc import ABC, abstractmethod
@@ -351,6 +373,8 @@ class CsvCustomersJob(EtlJob):
 if __name__ == "__main__":
     CsvCustomersJob().run()
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

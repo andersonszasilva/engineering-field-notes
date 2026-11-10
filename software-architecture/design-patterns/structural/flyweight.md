@@ -70,7 +70,9 @@ Real examples: `String.intern()`, `Integer.valueOf()` for -128..127, glyphs in t
 
 Scenario: 100,000 map markers share 2 `MarkerStyle` flyweights (heavy icon data).
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -107,7 +109,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 import java.util.concurrent.ConcurrentHashMap
 
@@ -130,7 +136,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -186,7 +196,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <map>
@@ -230,7 +244,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::collections::HashMap;
 use std::rc::Rc;
@@ -277,7 +295,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from dataclasses import dataclass
 from functools import cache
@@ -310,6 +332,8 @@ if __name__ == "__main__":
     ]
     print(f"{len(markers)} markers, {marker_style.cache_info().currsize} styles")
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

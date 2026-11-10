@@ -72,7 +72,9 @@ In languages with **sum types + exhaustive pattern matching** (Rust, Kotlin, Jav
 
 Scenario: shapes with two operations, `area` and `toSvg`, implemented as visitors (or pattern matching).
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.List;
 
@@ -117,7 +119,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 import kotlin.math.PI
 
@@ -143,7 +149,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -196,7 +206,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <numbers>
@@ -239,7 +253,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::f64::consts::PI;
 
@@ -296,7 +314,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 import math
 from dataclasses import dataclass
@@ -349,6 +371,8 @@ if __name__ == "__main__":
     for s in shapes:
         print(to_svg(s))
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

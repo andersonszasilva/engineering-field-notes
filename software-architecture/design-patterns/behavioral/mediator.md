@@ -74,7 +74,9 @@ Mediator vs Observer: Observer broadcasts notifications from one subject to many
 
 Scenario: a chat room mediates messages between users; users never reference each other.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -124,7 +126,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 interface ChatMediator {
     fun join(user: User)
@@ -155,7 +161,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -205,7 +215,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -251,7 +265,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 // Rust discourages cyclic references (user -> room -> user).
 // Idiomatic version: the mediator owns the colleagues and users are addressed by id.
@@ -299,7 +317,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from __future__ import annotations
 
@@ -339,6 +361,8 @@ if __name__ == "__main__":
     User("carla", room)
     ana.say("standup in 5 min")
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

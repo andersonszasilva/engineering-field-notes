@@ -70,7 +70,9 @@ Two variants: (1) classic GoF, **only one** handler handles it; (2) *pipeline/mi
 
 Scenario: a request goes through `Auth → RateLimit → Business handler`; any step can short-circuit with an error status.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.HashMap;
 import java.util.Map;
@@ -123,7 +125,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 data class Request(val user: String, val token: String, val path: String)
 data class Response(val status: Int, val body: String)
@@ -157,7 +163,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -222,7 +232,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <map>
@@ -279,7 +293,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::collections::HashMap;
 
@@ -330,7 +348,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from collections import Counter
 from collections.abc import Callable
@@ -393,6 +415,8 @@ if __name__ == "__main__":
     for token in ["wrong", "secret", "secret", "secret"]:
         print(app(Request("ana", token, "/orders")))
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

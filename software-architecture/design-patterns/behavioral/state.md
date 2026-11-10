@@ -70,7 +70,9 @@ Modern implementations: *sealed types* + exhaustive `match`, enums with methods,
 
 Scenario: an order state machine. `pay`, `ship`, `deliver`, `cancel` are valid only in some states.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 // Each state is an immutable object that returns the next state.
 sealed interface OrderState permits Pending, Paid, Shipped, Delivered, Cancelled {
@@ -125,7 +127,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 // Sealed hierarchy + exhaustive `when`: the transition table lives in one place.
 sealed interface OrderState {
@@ -172,7 +178,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -233,7 +243,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -296,7 +310,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 // Typestate: each state is a type; invalid transitions are compile errors, not runtime errors.
 struct Pending;
@@ -343,7 +361,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from __future__ import annotations
 
@@ -394,6 +416,8 @@ if __name__ == "__main__":
     order.handle("deliver")
     print(order.state)
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

@@ -82,7 +82,9 @@ Proxy vs Decorator: nearly identical structure. A Decorator **adds behavior** an
 
 Scenario: a **virtual proxy** that loads a heavy image only on first `display()`, plus a **protection** check.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.Set;
 
@@ -127,7 +129,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 interface Image {
     fun display(user: String)
@@ -156,7 +162,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -205,7 +215,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -251,7 +265,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::cell::OnceCell;
 use std::collections::HashSet;
@@ -306,7 +324,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from functools import cached_property
 
@@ -341,6 +363,8 @@ if __name__ == "__main__":
     image.display("ana")
     image.display("ana")
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

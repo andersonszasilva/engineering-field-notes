@@ -72,7 +72,9 @@ In modern code, the "factory method" often shows up as a **parameterized factory
 
 Scenario: a notification service creates a `Notifier` for a given channel.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 interface Notifier {
     void send(String to, String message);
@@ -122,7 +124,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 interface Notifier {
     fun send(to: String, message: String)
@@ -158,7 +164,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -207,7 +217,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -256,7 +270,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 trait Notifier {
     fn send(&self, to: &str, message: &str);
@@ -306,7 +324,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Protocol
@@ -354,6 +376,8 @@ if __name__ == "__main__":
     EmailNotificationService().notify_user("ana@example.com", "Welcome!")
     notifier_for("sms").send("+5511999999999", "Your code is 1234")
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

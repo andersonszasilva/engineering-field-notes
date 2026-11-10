@@ -70,7 +70,9 @@ Frequently changing business rules, such as "enable the feature if `country == B
 
 Scenario: feature-flag rule `country == "BR" AND (plan == "pro" OR NOT beta == "false")`, evaluated against user attributes. (The parser is omitted; the AST is built directly.)
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.Map;
 
@@ -105,7 +107,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 sealed interface Expr
 data class Eq(val attr: String, val value: String) : Expr
@@ -133,7 +139,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -165,7 +175,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <map>
@@ -214,7 +228,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::collections::HashMap;
 
@@ -253,7 +271,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from __future__ import annotations
 
@@ -307,6 +329,8 @@ if __name__ == "__main__":
     print(evaluate(rule, {"country": "BR", "plan": "free", "beta": "true"}))   # True
     print(evaluate(rule, {"country": "BR", "plan": "free", "beta": "false"}))  # False
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

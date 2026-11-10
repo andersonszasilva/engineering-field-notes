@@ -70,7 +70,9 @@ Some resources should exist only once per process: a connection pool, a metrics 
 
 Scenario: an application-wide configuration object loaded once.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 // Initialization-on-demand holder: lazy and thread-safe, guaranteed by the JVM class loading.
 final class AppConfig {
@@ -101,7 +103,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 // `object` is a language-level singleton: lazy and thread-safe on first access.
 object AppConfig {
@@ -114,7 +120,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -151,7 +161,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <cstdlib>
 #include <iostream>
@@ -184,7 +198,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::sync::OnceLock;
 
@@ -206,7 +224,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 import os
 from functools import cache
@@ -227,6 +249,8 @@ if __name__ == "__main__":
     print(get_config() is get_config())  # True
     print(get_config().env)
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

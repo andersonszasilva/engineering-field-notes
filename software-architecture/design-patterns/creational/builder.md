@@ -66,7 +66,9 @@ Objects with many parameters, several of them optional, lead to the *telescoping
 
 Scenario: building an immutable `HttpRequest` with a required URL and optional method, headers, and timeout.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.time.Duration;
 import java.util.HashMap;
@@ -123,7 +125,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds
@@ -161,7 +167,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -209,7 +219,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <chrono>
 #include <iostream>
@@ -264,7 +278,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::collections::HashMap;
 use std::time::Duration;
@@ -313,7 +331,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from dataclasses import dataclass, field
 
@@ -364,6 +386,8 @@ if __name__ == "__main__":
         .build()
     )
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

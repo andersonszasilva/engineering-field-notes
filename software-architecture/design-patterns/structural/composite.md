@@ -68,7 +68,9 @@ A file system has files and directories; directories contain files and other dir
 
 Scenario: files and directories; `size()` works the same on both.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -103,7 +105,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 sealed interface Node {
     val name: String
@@ -130,7 +136,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -176,7 +186,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -224,7 +238,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 // An enum is the idiomatic Rust composite: closed set of node kinds, exhaustive matching.
 enum Node {
@@ -267,7 +285,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from __future__ import annotations
 
@@ -303,6 +325,8 @@ if __name__ == "__main__":
     )
     print(f"{root.name} = {root.size()} bytes")  # 2920
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

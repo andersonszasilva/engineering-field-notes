@@ -74,7 +74,9 @@ Related ideas: *commands* in CQRS, messages in queues (the serialized command), 
 
 Scenario: a text editor with `Insert` and `Delete` commands and an undo history.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -130,7 +132,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 class Document { val text = StringBuilder() }
 
@@ -171,7 +177,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -232,7 +242,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -295,7 +309,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 // Commands as an enum: data-only, serializable (e.g. with serde), exhaustive matching.
 #[derive(Debug)]
@@ -341,7 +359,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from dataclasses import dataclass, field
 from typing import Protocol
@@ -406,6 +428,8 @@ if __name__ == "__main__":
     editor.undo()
     print(doc.text)  # Hello world
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

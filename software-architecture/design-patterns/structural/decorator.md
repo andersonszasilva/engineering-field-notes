@@ -72,7 +72,9 @@ It's the same idea as HTTP *middleware*, interceptors, Python `@decorators`, and
 
 Scenario: a `Fetcher` decorated with caching and logging.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.HashMap;
 import java.util.Map;
@@ -119,7 +121,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 interface Fetcher {
     fun fetch(url: String): String
@@ -155,7 +161,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -208,7 +218,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <chrono>
 #include <iostream>
@@ -262,7 +276,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::cell::RefCell;
 use std::collections::HashMap;
@@ -317,7 +335,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 import functools
 import time
@@ -360,6 +382,8 @@ if __name__ == "__main__":
     fetch("https://api.example.com/users/1")
     fetch("https://api.example.com/users/1")
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

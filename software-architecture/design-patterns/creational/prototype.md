@@ -66,7 +66,9 @@ Sometimes building an object is expensive (loads data, parses, calls a service),
 
 Scenario: a registry of document templates; each new document is a **deep copy** so editing its sections doesn't affect the template.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -113,7 +115,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 // data class `copy()` is shallow: mutable collections must be copied explicitly.
 data class Document(val title: String, val sections: MutableList<String>) {
@@ -138,7 +144,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -175,7 +185,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <map>
@@ -219,7 +233,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::collections::HashMap;
 
@@ -258,7 +276,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 import copy
 from dataclasses import dataclass, field
@@ -296,6 +318,8 @@ if __name__ == "__main__":
     print(adr)
     print(registry.create("adr"))  # template unchanged
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

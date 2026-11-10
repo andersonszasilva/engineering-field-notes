@@ -72,7 +72,9 @@ It's the pattern behind DDD's *anti-corruption layer* and the *adapters* of hexa
 
 Scenario: adapt a legacy payment SDK (cents + status codes) to the domain's `PaymentGateway` (decimal amount + exceptions/results).
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.math.BigDecimal;
 
@@ -114,7 +116,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 import java.math.BigDecimal
 
@@ -146,7 +152,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -192,7 +202,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <cmath>
 #include <cstdint>
@@ -237,7 +251,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 // Target
 trait PaymentGateway {
@@ -273,7 +291,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from decimal import Decimal
 from typing import Protocol
@@ -308,6 +330,8 @@ if __name__ == "__main__":
     gateway: PaymentGateway = LegacyPayAdapter(LegacyPayClient())
     gateway.charge("order-1", Decimal("19.90"))
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

@@ -74,7 +74,9 @@ The same principle scales to architecture: *event listeners*, reactive programmi
 
 Scenario: an in-process event bus publishes `OrderPaid`; email and inventory subscribers react. Subscriptions can be cancelled.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -115,7 +117,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.launch
@@ -149,7 +155,11 @@ fun main() = runBlocking {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -208,7 +218,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <functional>
 #include <iostream>
@@ -246,7 +260,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 use std::sync::mpsc;
 use std::thread;
@@ -291,7 +309,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from collections.abc import Callable
 from dataclasses import dataclass
@@ -328,6 +350,8 @@ if __name__ == "__main__":
     cancel()
     events.publish(OrderPaid("order-2", 1_000))
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |

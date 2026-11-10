@@ -70,7 +70,9 @@ Memento vs Command for undo: Command stores the **operation** and knows how to r
 
 Scenario: a `Settings` object (originator) with a bounded history (caretaker) of opaque snapshots.
 
-### Java
+<details>
+<summary><strong>Java</strong></summary>
+
 ```java
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -128,7 +130,11 @@ class Main {
 }
 ```
 
-### Kotlin
+</details>
+
+<details>
+<summary><strong>Kotlin</strong></summary>
+
 ```kotlin
 class Settings {
     var theme = "light"
@@ -169,7 +175,11 @@ fun main() {
 }
 ```
 
-### Go
+</details>
+
+<details>
+<summary><strong>Go</strong></summary>
+
 ```go
 package main
 
@@ -219,7 +229,11 @@ func main() {
 }
 ```
 
-### C++
+</details>
+
+<details>
+<summary><strong>C++</strong></summary>
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -263,7 +277,11 @@ int main() {
 }
 ```
 
-### Rust
+</details>
+
+<details>
+<summary><strong>Rust</strong></summary>
+
 ```rust
 mod settings {
     #[derive(Debug)]
@@ -310,7 +328,11 @@ fn main() {
 }
 ```
 
-### Python
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+
 ```python
 from dataclasses import dataclass
 
@@ -351,6 +373,8 @@ if __name__ == "__main__":
     settings.restore(history.pop())
     print(settings)
 ```
+
+</details>
 
 ### Notas idiomáticas / Idiomatic notes
 | Language | Note |
